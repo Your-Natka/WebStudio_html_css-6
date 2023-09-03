@@ -53,19 +53,6 @@
           <use href="./images/icons.svg#menu"></use>
         </svg>
       </button>
-      <!-- Header menu -->
-      <div class="menu-modal is-hidden" data-modal>
-        <button class="menu-btn js-close-menu" type="button" js-close-menu>
-          <svg class="close-btn-menu" width="8" height="8">
-            <use href="./images/icons.svg#close-black-1"></use>
-          </svg>
-        </button>
-        <div class="menu-container" js-menu-container is-open id="mobile-menu">
-
-        </div>
-
-        <script src="js/mobile-menu.js"></script>
-      </div>
   </header>
   <main>
     <!-- SECTION ONE  -->
@@ -157,7 +144,8 @@
         <ul class="list section-for-list">
           <li class="section-four-items">
             <div class="team-container">
-              <img src="./images/1.jpg" alt="Mark Guerrero" width="264" height="260" />
+              <img loading="lazy" srcset="./images/1.jpg 1x, ./images/1@2x" src="./images/1.jpg" alt="Mark Guerrero"
+                width="264" height="260" />
             </div>
             <div class="team-cart-content">
               <h3 class="team-sub-title">Mark Guerrero</h3>
@@ -196,7 +184,8 @@
           </li>
           <li class="section-four-items">
             <div class="team-container">
-              <img src="./images/2.jpg" alt="Tom Ford" width="264" height="260" />
+              <img loading="lazy" srcset="./images/2.jpg 1x, ./images/2@2x" src="./images/2.jpg" alt="Tom Ford"
+                width="264" height="260" />
             </div>
             <div class="team-cart-content">
               <h3 class="team-sub-title">Tom Ford</h3>
@@ -235,7 +224,8 @@
           </li>
           <li class="section-four-items">
             <div class="team-container">
-              <img src="./images/3.jpg" alt="Camila Garcia" width="264" height="260" />
+              <img loading="lazy" srcset="./images/3.jpg 1x, ./images/3@2x" src="./images/3.jpg" alt="Camila Garcia"
+                width="264" height="260" />
             </div>
             <div class="team-cart-content">
               <h3 class="team-sub-title">Camila Garcia</h3>
@@ -274,7 +264,8 @@
           </li>
           <li class="section-four-items">
             <div class="team-container">
-              <img src="./images/4.jpg" alt="Daniel Wilson" width="264" height="260" />
+              <img loading="lazy" srcset="./images/4.jpg 1x, ./images/4@2x" src="./images/4.jpg" alt="Daniel Wilson"
+                width="264" height="260" />
             </div>
             <div class="team-cart-content">
               <h3 class="team-sub-title">Daniel Wilson</h3>
@@ -492,7 +483,71 @@
       </form>
     </div>
   </div>
+  <!-- Header menu -->
+  <div class="menu-container js-menu-container is-open is-hidden" id="mobile-menu">
+    <button class="menu-btn modal-btn js-close-menu" type="button" js-close-menu>
+      <svg class="modal-btn-icon close-btn-menu" width="8" height="8">
+        <use href="./images/icons.svg#close-black-1"></use>
+      </svg>
+    </button>
+    <ul class="mob-menu list">
+      <li class="mob-menu-item">
+        <a class="menu-link current link" href="./index.html">Studio</a>
+      </li>
+      <li class="mob-menu-item">
+        <a class="menu-link link" href="./index.html">Portfolio</a>
+      </li>
+      <li class="mob-menu-item">
+        <a class="menu-link link" href="./index.html">Contacts</a>
+      </li>
+    </ul>
+    <address class="mob-address">
+      <ul class="mob-address-list list">
+        <li class="mob-address-item">
+          <a class="mob-address-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mob-address-item">
+          <a class="mob-address-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mob-social icon-links-media">
+        <li class="social-link-footer">
+          <a class="icon-social" href="https://www.instagram.com/" target="_blank">
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-link-footer">
+          <a class="icon-social" href="https://www.twitter.com/" target="_blank">
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-link-footer">
+          <a class="icon-social" href="https://www.facebook.com/" target="_blank">
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-link-footer">
+          <a class="icon-social" href="https://www.linkedin.com/" target="_blank">
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </address>
 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"> </script>
+
+    <script src="js/mobile-menu.js"></script>
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 
