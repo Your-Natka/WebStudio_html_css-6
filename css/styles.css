@@ -172,13 +172,12 @@ header {
 
 @media screen and (min-width: 768px) {
     header {
-        max-width: 766px;
         display: flex;
     }
-        header>.container {
-            display: flex;
-            justify-content: space-between;
-        }
+    header>.container {
+        display: flex;
+        justify-content: space-between;
+    }
     .header-flex {
         display: flex;
         align-items: center;
@@ -275,6 +274,9 @@ header {
     .address-link:hover,
     .address-link:focus {
         color: var(--ocean);
+    }
+    .header-menu {
+       display: none; 
     }
 }
 
