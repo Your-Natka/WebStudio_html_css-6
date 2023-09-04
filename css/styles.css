@@ -62,7 +62,9 @@ a {
     color: currentColor;
     text-decoration: none;
 } 
-
+.section {
+    margin: 0 auto;
+}
 /* Adaptive img */
  /* Common style */
 
@@ -86,6 +88,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 address {
@@ -169,6 +172,7 @@ header {
 
 @media screen and (min-width: 768px) {
     header {
+        max-width: 766px;
         display: flex;
     }
     .header-flex {
@@ -201,7 +205,7 @@ header {
        font-size: 16px;
        line-height: 1.5;
        letter-spacing: 0.02em;
-       position: relative;
+    
    }
 
    .nav-link:hover:after,
@@ -243,7 +247,9 @@ header {
    }
 
    .address-items {
-       display: flex;
+        display: flex;
+        gap: 40px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
    .address-items:last-child {
@@ -267,59 +273,6 @@ header {
 }
 
 
-@media screen and (min-width: 1158px) {
-    /* HEADER CSS */
-
-.address {
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.32px;
-}
-
-.address-items {
-    display: flex;
-    gap: 40px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-items:last-child {
-    margin-right: 0;
-}
-
-.address-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: block;
-    padding: 24px 0;
-    margin: 0 auto;
-    color: var(--slate);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-.address-link:hover,
-.address-link:focus {
-    color: var(--ocean);
-}
-}
-/* Common style */
-
-.container {
-    max-width: 396px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.link {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.list {
-    list-style: none;
-    
-}
 
 @media screen and (min-width: 768px) {
     .container {
@@ -334,9 +287,6 @@ header {
             max-width: 1158px;
             padding: 0 15px;
         }
-.open-btn {
-    position: none;
-}
 }
 /* Section HERO */
 .hero-section {
@@ -426,7 +376,7 @@ screen and (min-resolution: 2dppx) {
     .hero-section {
         background-image: linear-gradient(#2e2f42b3,
                 rgba(46, 47, 66, 0.7)),
-            url(../images/hero-bg-tab@2x.jpg);
+            url(../images/Dark-bg-tab@2x.jpg);
     }
 
 }
@@ -640,6 +590,10 @@ screen and (min-resolution: 2dppx) {
 }
 
 .section-four-items {
+
+
+
+
     margin-left: auto;
     margin-right: auto;
     border-radius: 0px 0px 4px 4px;
@@ -707,6 +661,13 @@ screen and (min-resolution: 2dppx) {
 
 .icon-four {
     fill: var(--cloud, #f4f4fd);
+}
+@media only screen and (min-width: 768px) {
+    .list-item {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 64px;
+    }
 }
 @media screen and (min-width: 768px) {
 .main-section-four {
