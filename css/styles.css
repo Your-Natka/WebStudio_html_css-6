@@ -479,6 +479,7 @@ screen and (min-resolution: 2dppx) {
         flex-wrap: wrap;
     }
     .two-items {
+        margin-bottom: unset;
         flex-basis: calc((100% - 24px) / 2);
         width: 100%;
     }
@@ -768,6 +769,7 @@ screen and (min-resolution: 2dppx) {
         padding-bottom: 96px;
     }
     .container {
+        width: 100%;
         padding: 0;
         max-width: 736px;
     }
@@ -1515,8 +1517,6 @@ footer {
         outline: none;
 }
 
-
-
 .menu-modal {
     display: flex;
     flex-direction: column;
@@ -1570,7 +1570,7 @@ footer {
 
 .menu-btn {
     background-color: transparent;
-   
+   color: #2E2F42;
 }
 
 .mob-menu {
@@ -1588,9 +1588,7 @@ footer {
     color: var(--navy-blue);
     transition: color var(--transition);
 }
-.nav-link>.current {
-    color: var(--ocean);
-}
+
 .menu-link>.current {
     color: var(--ocean);
 }
@@ -1600,10 +1598,12 @@ footer {
     flex-direction: column;
     gap: 40px;
 }
-
+.modal-icon-btn,
+.close-icon-btn {
+    transition: fill var(--transition);
+}
 .mob-address-tel {
     color: var(--iris);
-    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
