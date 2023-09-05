@@ -440,7 +440,7 @@ screen and (min-resolution: 2dppx) {
     width: 100%;
 }
 .list-two:last-child {
-    margin-right: 0;
+    margin-bottom: unset;
 }
 .icon-frame {
     display: none;
@@ -510,7 +510,7 @@ screen and (min-resolution: 2dppx) {
     }
     .section-two {
         padding-top: 120px;
-        padding-bottom: 0;
+        padding-bottom: 120px;
     }
     .list-two {
         row-gap: 72px;
@@ -1010,6 +1010,9 @@ footer {
     .footer {
         padding: 96px 0;
     }
+    .footer-social-one {
+        margin-bottom: unset;
+    }
     .logo-footer {
         margin-bottom: 16px;
         align-self: start;
@@ -1022,6 +1025,7 @@ footer {
     .footer-social-two {
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: unset;
     }
     
     .footer-paragraph-logo {
