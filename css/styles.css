@@ -246,7 +246,7 @@ header {
         font-style: normal;
         font-weight: 400;
         letter-spacing: 0.32px;
-        margin-left: 120px;
+        margin-left: auto;
     }
 
     .address-items {
@@ -279,7 +279,8 @@ header {
 
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        width: 100%;
+        max-width: 736px;
         padding: 0 16px;
         }
     .header-menu {
