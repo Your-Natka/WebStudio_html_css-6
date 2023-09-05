@@ -1233,7 +1233,8 @@ footer {
     cursor: pointer;
 }
 
-.modal-btn-icon, .close-btn-menu {
+.modal-btn-icon, 
+.close-btn-menu {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2E2F42;
 }
@@ -1576,7 +1577,7 @@ footer {
 .menu-container.is-open {
     transform: translateX(0);
 }
-.close-btn-menu {
+.close-btn-menu, .menu-btn {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2E2F42;
 }
@@ -1584,8 +1585,8 @@ footer {
     background-color: transparent; 
     color: var(--cornflower);
 }
- .menu-btn:hover,
- .menu-btn:focus {
+ .close-btn-menu:hover,
+ .close-btn-menu:focus {
     background-color: var(--ocean);
     border: none;
  }
@@ -1610,7 +1611,9 @@ footer {
     color: var(--navy-blue);
     transition: color var(--transition);
 }
-
+.mob-menu-item:first-child {
+color: var(--ocean);
+}
 .menu-link>.current {
     color: var(--ocean);
 }
