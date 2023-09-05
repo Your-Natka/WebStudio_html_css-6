@@ -145,6 +145,7 @@ header {
     text-transform: uppercase;
     padding: 24px 0;
 }
+
 .studio-color {
     color: var(--navyblue);
 }
