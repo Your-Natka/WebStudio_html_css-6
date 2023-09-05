@@ -595,7 +595,7 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 72px;
 }
 .section-for-list {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -794,7 +794,7 @@ screen and (min-resolution: 2dppx) {
 
 }
 @media only screen and (min-width: 1158px) {
-
+    
 }
 @media screen and (min-width: 1158px) {
     .main-section-five {
