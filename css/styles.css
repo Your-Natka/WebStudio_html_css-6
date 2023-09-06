@@ -444,7 +444,8 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 72px;
     width: 100%;
 }
-.list-two:last-child {
+
+.two-items:last-child {
     margin-bottom: unset;
 }
 .icon-frame {
