@@ -95,5 +95,8 @@
     <symbol id="menu" viewBox="0 0 47 32">
      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
     </symbol>
+    <symbol id="icon-star-3" viewBox="0 0 32 32">
+     <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M16 4l3.708 7.899 8.292 1.274-6 6.145 1.416 8.681-7.416-4.101-7.416 4.101 1.416-8.681-6-6.145 8.292-1.274 3.708-7.899z"></path>
+    </symbol>
   </defs>
 </svg>
